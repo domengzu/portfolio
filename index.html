@@ -5,30 +5,182 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>portfolio | domengzu</title>
    <link rel="stylesheet" href="src/css/main.css">
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="src/images/hero.jpg" type="image/x-icon">
 </head>
 <body>
-   <header class="header">
+   <header>
       <nav>
          <div class="logo">
             <h1>
-               <a href="index.html">domengzu</a>
+               <a href="index.html">Domengzu</a>
             </h1>
          </div>
          <ul class="nav-list">
             <li>
-               <a href="index.html">
+               <a href="index.html" class="nav-link">
                   Main
                </a>
             </li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Educ.</li>
+            <li>
+               <a href="" class="nav-link">
+                  About
+               </a>
+            </li>
+            <li>
+               <a href="" class="nav-link">
+                  Projects
+               </a>
+            </li>
+            <li>
+               <a href="" class="nav-link">
+                  Educ.
+               </a>
+            </li>
+            <li>
+               <a href="https://github.com/domengzu" target="_blank" rel="noopener noreferrer" 
+               class="nav-link" id="github">
+               <img id="github-icon" src="src/images/github-white.png">   
+               domengzu
+               </a>
+            </li>
          </ul>
       </nav>
    </header>
    <main>
-      
+      <section>
+         <div class="hero">
+            <div class="hero-img-container">
+               <div class="hero-img">
+                  <img src="src/images/hero.jpg" alt="hero image">
+               </div>
+            </div>
+            <div class="hero-text">
+               <h2>Hey, I'm Domengzu</h2>
+               <p>I'm a software engineer with a passion for building web applications.</p>
+               <p>Currently, I'm working on some personal projects and looking for new opportunities.</p>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="about-section">
+            <div class="title">
+               <h2>
+                  <img src="src/images/icons/details-o-svgrepo-com.svg" alt="about"/>
+                  About Domengzu
+               </h2>
+            </div>
+            <div class="about-content">
+               <p>Hello! I'm Domengzu, a third-year Bachelor of Science in Information Technology student at Eastern Visayas State University – Ormoc Campus. 
+                  My academic journey has equipped me with a strong foundation in programming, systems analysis, and network administration.​<br><br>
+                  Beyond academics, I have a keen interest in web development and design, which allows me to blend technical skills with creative expression. 
+                  I'm passionate about building intuitive and responsive websites that provide seamless user experiences.<br><br>
+                  When I'm not immersed in code, I enjoy exploring new technologies, contributing to open-source projects, and engaging with the tech community. I'm always eager to learn and collaborate on innovative projects that make a positive impact.​
+               </p>   
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="project-section">
+            <div class="title">
+               <h2>
+                  <img src="src/images/icons/file-done-svgrepo-com.svg" alt="projects"/>
+                  Domengzu's projects
+               </h2>
+               <!-- <p>These are the projects I made during school days and up until now.</p> -->
+            </div>
+            <div class="projects">
+               <div class="card">
+                  <div class="card-img-container">
+                     <img src="src/images/car-marketplace.png" alt="project 1">
+                  </div>
+                  <div class="card-text">
+                     <h3>Car marketplace e-commerce</h3>
+                     <p>This project is made with php and javacript. <br>
+                        It was my project in my Web Technologies subject.<br><br>
+                        June 2024
+                     </p>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-img-container">
+                     <img src="src/images/ph-holiday.png" alt="project 1">
+                  </div>
+                  <div class="card-text">
+                     <h3>Philippines Holiday API</h3>
+                     <p>This project is made with laravel and postgreSQL database.
+                        I recently finished this project and currently in production.<br><br>
+                        May 2025
+                     </p>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-img-container">
+                     <img src="src/images/church-funds.png" alt="project 1">
+                  </div>
+                  <div class="card-text">
+                     <h3>Church Funds Management System</h3>
+                     <p>This is my first commission project it is made with php language and mySQL database.
+                        I made this project for my classmate.<br><br>
+                        July 2023
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="education-section">
+            <div class="title">
+               <h2>
+                  <img src="src/images/icons/education-learning-9-svgrepo-com.svg" alt="education"/>
+                  Domengzu's education
+               </h2>
+            </div>
+            <div class="education-content">
+               <p>in progress...</p>
+               <!-- <p>Currently, I'm a third-year student at Eastern Visayas State University – Ormoc Campus, pursuing a Bachelor of Science in Information Technology. 
+                  My academic journey has provided me with a solid foundation in programming, systems analysis, and network administration. 
+                  I have gained hands-on experience in various programming languages and technologies, which has fueled my passion for web development and design.<br><br>
+                  I am committed to continuous learning and growth in the field of technology, and I look forward to applying my skills in real-world projects.
+               </p>    -->
+            </div>
+         </div>
+      </section>
    </main>
+   <footer>
+      <div class="footer-top">
+        <p>&copy; 2025 Domengzu. All rights reserved.</p>
+      </div>
+      <div class="footer-container">
+         <div class="social-links">
+            <!-- <p>Social links:</p> -->
+            <div class="github">
+               <a href="https://github.com/domengzu" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/github-white.png" alt="github icon">
+                  Github
+               </a>
+            </div>
+            <div class="facebook">
+               <a href="https://www.facebook.com/dmnck.mahusay/" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/icons//facebook-outline-svgrepo-com.svg" alt="facebook icon">
+                  Facebook
+               </a>
+            </div>
+            <div class="instagram">
+               <a href="https://www.instagram.com/domengzu/" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/icons/instagram-svgrepo-com.svg" alt="instagram icon">
+                  Instagram
+               </a>
+            </div>
+         </div>
+         <div class="footer-email">
+            <p>Contact me through:</p>
+            <a href="mailto:domenick.mahusay14@gmail.com">
+               <img src="src/images/icons/email-1573-svgrepo-com.svg" alt="email icon">
+               Email
+            </a>
+         </div>
+      </div>
+   </footer>
 </body>
 </html>
