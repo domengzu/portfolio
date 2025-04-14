@@ -1,4 +1,4 @@
-@import url(../_fonts/nunito-sans.css);
+@import url("../_fonts/nunito-sans.css");
 
 *{
    margin: 0;
@@ -19,15 +19,18 @@ header{
    backdrop-filter: blur(10px);
 }
 .logo{
-   font: bolder;
+   /* text-indent: 1rem; */
 }
 .logo a{
    text-decoration: none;
-}
-.logo a:hover{
-   color: #007acc;
-
+   font-family: 'Special Gothic Expanded One', sans-serif;
    transition: all 0.3s ease-in-out;
+}
+.logo span{
+   font-family: 'Special Gothic Expanded One', sans-serif;
+   transition: all 0.3s ease-in-out;
+   color: #007acc;
+   margin-left: .1rem;
 }
 nav{
    display: flex;
@@ -44,6 +47,8 @@ nav ul{
 }
 nav ul li a{
    text-decoration: none;
+   font-family: 'Lora', serif;
+   font-style: oblique;
 }
 .nav-link::after {
   content: '';
@@ -94,6 +99,7 @@ section{
    display: flex;
    justify-content: center;
    align-items: center;
+   /* border: 1px solid #F1EFEC; */
 }
 .hero{
    display: flex;
@@ -101,7 +107,6 @@ section{
    justify-content: center;
    align-items: center;
    gap: 5em;
-   /* margin-top: 15rem; */
 }
 .hero-img-container{
    display: flex;
@@ -119,10 +124,10 @@ section{
    height: 20rem;
    border-radius: 50%;
    filter: blur(.1em);
+   transition: all 0.3s ease-in;
 }
 .hero-img img:hover{
    transform: scale(1.1);
-   transition: all 0.3s ease-in;
    filter: blur(0);
 }
 .hero-text{
@@ -130,6 +135,7 @@ section{
 }
 .hero-text h2{
    font-size: 1.5rem;
+   font-family: 'Special Gothic Expanded One', sans-serif;
    font-weight: 700;
    margin-bottom: 1rem;
    font-style: italic;
@@ -149,6 +155,8 @@ section{
 }
 .hero-text p{
    text-align: center;
+   font-family: 'Lora', serif;
+   font-style: oblique;
 }
 .about-section{
    /* margin-top: 15rem; */
@@ -164,8 +172,12 @@ section{
    margin-right: .5rem;
    vertical-align: middle;
 }
+.about-section p{
+   font-family: 'Lora', serif;
+   font-style: oblique;
+   text-align: justify;
+}
 section .title{
-   font-weight: 700;
    margin-bottom: 1rem;
 }
 section .about-content{
@@ -219,18 +231,66 @@ section .about-content{
    height: 12rem;
    border-radius: 1rem;
    margin-bottom: 1rem;
+   transition: all 0.3s ease-in;
 }
 .projects .card img:hover{
    transform: scale(1.1);
-   transition: all 0.3s ease-in;
+}
+.card-text h3{
+   padding: 0.5rem 1rem;
+   font-style: oblique;
 }
 .card-text p{
    text-align: justify;
    padding: .5rem 1rem;
    border-radius: .5rem;
    border-left: .5em solid #F1EFEC;
+   font-family: 'Lora', serif;
+   font-style: oblique;
 }
+/* .education-section{
+   padding: 10em;
+} */
 .education-section .title img{
+   width: 2rem;
+   height: 2rem;
+   margin-right: .5rem;
+   vertical-align: middle;
+}
+.education-section .title h2{
+   text-align: center;
+   margin-bottom: 5rem;
+}
+.education-content{
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+}
+.education-card{
+   padding: 1rem 0rem;
+}
+.education-card h2{
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   font-family: 'Special Gothic Expanded One', sans-serif;
+}
+.education-card p{
+   text-align: justify;
+   font-family: 'Lora', serif;
+   font-style: oblique;
+}
+.educ-text{
+   padding: 0rem 1rem;
+   border-radius: .5rem;
+   border-left: 4px solid #F1EFEC;
+}
+.right-container p{
+   text-align: justify;
+   border-radius: .5rem;
+   /* border-left: 4px solid #F1EFEC; */
+   /* padding: 0rem 1rem; */
+}
+.tech-section .title img{
    width: 2rem;
    height: 2rem;
    margin-right: .5rem;
