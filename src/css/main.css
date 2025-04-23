@@ -103,7 +103,7 @@ section{
 }
 .hero{
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
    justify-content: center;
    align-items: center;
    gap: 5em;
@@ -112,18 +112,18 @@ section{
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 20rem;
-   width: 20rem;
+   height: 30rem;
+   width: 30rem;
    border-radius: 50%;
    overflow: hidden;
    box-shadow: 0 0 25px 1px rgb(255, 255, 255);
 }
 .hero-img img{
    position: relative;
-   width: 20rem;
-   height: 20rem;
+   width: 25rem;
+   height: 25rem;
    border-radius: 50%;
-   filter: blur(.1em);
+   /* filter: blur(.01em); */
    transition: all 0.3s ease-in;
 }
 .hero-img img:hover{
