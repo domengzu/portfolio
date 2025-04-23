@@ -19,7 +19,7 @@ header{
    backdrop-filter: blur(10px);
 }
 .logo{
-   /* text-indent: 1rem; */
+   /* word-spacing: 1em; */
 }
 .logo a{
    text-decoration: none;
@@ -248,9 +248,9 @@ section .about-content{
    font-family: 'Lora', serif;
    font-style: oblique;
 }
-/* .education-section{
-   padding: 10em;
-} */
+.education-section{
+   padding: 0 13em;
+}
 .education-section .title img{
    width: 2rem;
    height: 2rem;
@@ -280,6 +280,7 @@ section .about-content{
    font-style: oblique;
 }
 .educ-text{
+   text-align: justify;
    padding: 0rem 1rem;
    border-radius: .5rem;
    border-left: 4px solid #F1EFEC;
@@ -290,14 +291,94 @@ section .about-content{
    /* border-left: 4px solid #F1EFEC; */
    /* padding: 0rem 1rem; */
 }
+.tech-section .title{
+   text-align: center;
+}
 .tech-section .title img{
    width: 2rem;
    height: 2rem;
    margin-right: .5rem;
    vertical-align: middle;
 }
-
-
+.tech-content{
+   margin-top: 5em;
+   display: grid;
+   grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+   gap: 2.5rem;
+   background: rgba(255, 255, 255, 0.16);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(9.9px);
+   -webkit-backdrop-filter: blur(9.9px);
+   /* background-color: transparent; */
+   /* backdrop-filter: blur(10px); */
+   padding: 3.56em;
+   animation: fadeInUp 1s ease-in-out;
+   animation-delay: 0.5s;
+}
+.tech-content a img{
+   height: 4em;
+   width: 4em;
+   /* z-index: ; */
+   transition: all 0.3s ease-in-out;
+   animation: fadeIn 1s ease-in-out;
+   animation-delay: 0.5s;
+}
+.tech-content a:hover img{
+   transform: translateY(-10px);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   /* -webkit-backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1)); */
+}
+#react-icon{
+   animation: spin 10s linear infinite;
+   animation-delay: 0.5s;
+}
+.tech-text{
+   text-align: center;
+   margin-top: 1rem;
+}
+.tech-text p{
+   font-family: 'Lora', serif;
+   font-style: oblique;
+}
+@keyframes spin{
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+@keyframes fadeInUp {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+.connect-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.connect-section .title img{
+   width: 2rem;
+   height: 2rem;
+   margin-right: .5rem;
+   vertical-align: middle;
+}
 footer {
    background-color: #222;
    color: #fff;
