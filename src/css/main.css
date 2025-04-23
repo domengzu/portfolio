@@ -10,6 +10,8 @@
 body{
    background-color: #030303;
    height: 100vh;
+   animation: fadeInUp 2s ease-in-out;
+   /* animation-delay: 0.5s; */
 }
 header{
    width: 100%;
@@ -133,6 +135,12 @@ section{
 .hero-text{
    text-align: justify;
 }
+.hero-text img{
+   width: 2.5rem;
+   height: 2.5rem;
+   margin-right: .5rem;
+   vertical-align: middle;
+}
 .hero-text h2{
    font-size: 1.5rem;
    font-family: 'Special Gothic Expanded One', sans-serif;
@@ -150,7 +158,7 @@ section{
       width: 0;
    }
    to{
-      width: 55%;
+      width: 65%;
    }
 }
 .hero-text p{
@@ -310,24 +318,20 @@ section .about-content{
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(9.9px);
    -webkit-backdrop-filter: blur(9.9px);
-   /* background-color: transparent; */
-   /* backdrop-filter: blur(10px); */
    padding: 3.56em;
-   animation: fadeInUp 1s ease-in-out;
-   animation-delay: 0.5s;
+   /* animation: fadeInUp 1s ease-in-out; */
+   /* animation-delay: 0.5s; */
 }
 .tech-content a img{
    height: 4em;
    width: 4em;
-   /* z-index: ; */
    transition: all 0.3s ease-in-out;
-   animation: fadeIn 1s ease-in-out;
-   animation-delay: 0.5s;
+   /* animation: fadeIn 1s ease-in-out; */
+   /* animation-delay: 0.5s; */
 }
 .tech-content a:hover img{
    transform: translateY(-10px);
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-   /* -webkit-backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1)); */
 }
 #react-icon{
    animation: spin 10s linear infinite;
